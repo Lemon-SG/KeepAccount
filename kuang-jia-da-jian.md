@@ -30,10 +30,11 @@ angular-tour-of-heroes
 /** 备注：这里记录了主要的文件概况，还有更多关于项目结构的更多用途信息，可以查看官方文档，更详细：https://angular.cn/guide/quickstart#项目文件概览 */
 ```
 
-sidemenu框架创建后，会在app下面创建 pages
+sidemenu框架创建后，会在src下面创建 pages
 
 ```
-app
+src
+...app
 ...pages
 ......home //首页
 ......list //列表页
@@ -42,7 +43,8 @@ app
 首先，在 项目需求 中已说明，项目需求的menu是 **Dashboard、记一笔、账单**，所以，我会把目录更改为以下结构：
 
 ```
-app
+src
+...app
 ...pages
 ......bills //账单列表页面
 .........bills.html 
@@ -75,6 +77,18 @@ export class TakeBillPage {
   }
 
 }
+```
+
+基本的项目架子已经成形，下面需要为架子创建对象，也就是定义model数据，同样在 src 下面创建文件夹 model
+
+```
+src
+...app
+...pages
+...model
+......bill.model.ts //账单对象
+......consume-type.model.ts  //消费类型对象
+......member.model.ts  //会员详情对象
 ```
 
 
