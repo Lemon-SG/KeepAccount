@@ -89,7 +89,14 @@ src
 ......bill.model.ts //账单对象
 ......consume-type.model.ts  //消费类型对象
 ......member.model.ts  //会员详情对象
+......account.model.ts  //会员帐户资产对象
 ```
+
+> 注意：
+>
+> TypeScript中对于数字只有这么一种类型，没有byte、short、int、uint、long、float、double等类型，而TypeScript的number实际上是一个64为的双精度浮点数，可以看做其它语言中的double类型 !!!
+
+
 
 
 
