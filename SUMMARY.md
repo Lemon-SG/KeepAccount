@@ -8,4 +8,5 @@
 * [Project Requirement](project-requirement.md)
 * [Develop Before](develop-before.md)
 * [FrameWork](framework.md)
+* [Develop UI of Take](develop-ui-of-take.md)
 
