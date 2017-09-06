@@ -6,5 +6,42 @@
 
 > ### **src/pages/take/take-bill.html**
 
+```
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>记一笔</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list inset>
+    <ion-item>
+      <ion-label>日期</ion-label>
+      <ion-datetime displayFormat="MM月DD日" min="2017" max="2017" [(ngModel)]="currentDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>消费类型</ion-label>
+      <ion-select [(ngModel)]="consumeType">
+        <ion-option value="consume1">日常开销</ion-option>
+        <ion-option value="consume2">购物</ion-option>
+        <ion-option value="consume3">餐饮</ion-option>
+        <ion-option value="consume4">娱乐</ion-option>
+        <ion-option value="consume5">请客</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>消费金额</ion-label>
+      <!-- Possible values are: "text", "password", "email", "number", "search", "tel", or "url". -->
+      <ion-input type="number" value=""></ion-input>
+    </ion-item>
+
+    <button ion-button class="take-bill center" color="danger" round center>+ 记一笔</button>
+  </ion-list>
+</ion-content>
+```
+
 
 
