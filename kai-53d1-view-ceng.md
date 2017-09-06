@@ -43,5 +43,28 @@
 </ion-content>
 ```
 
+> ### **src/pages/take/take-bill.ts**
+
+```
+import { Component } from '@angular/core';
+import { NavController, Events } from 'ionic-angular';
+
+@Component({
+  selector: 'page-take-bill',
+  templateUrl: 'take-bill.html'
+})
+
+export class TakeBillPage {
+
+  constructor(public navCtrl: NavController, public events: Events) { 
+    
+  }
+
+    // console.log((new Date().getMonth() + 1) + '月' + new Date().getDate() + '日');
+  currentDate: any =  (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日';
+  consumeType: any = '日常开销';
+}
+```
+
 
 
