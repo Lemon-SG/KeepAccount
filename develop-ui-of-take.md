@@ -66,5 +66,7 @@ export class TakeBillPage {
 }
 ```
 
+![](/assets/import.png)
+
 
 
